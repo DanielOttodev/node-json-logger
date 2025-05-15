@@ -1,1 +1,1 @@
-{"datetime":"2025-05-15T05:46:23.917Z","job":"Some script","totalItems":2,"logs":[{"id":0,"severity":0,"datetime":null,"message":"stuff","data":{"1":"more stuff?"}},{"id":1,"severity":1,"datetime":null,"message":"more stuff"}]}
+{"datetime":"2025-05-15T05:56:59.588Z","job":"Some script","totalItems":2,"logs":[{"id":0,"severity":0,"severityDesc":"WARNING","datetime":"2025-05-15T05:56:59.588Z","message":"stuff","data":{"1":"more stuff?"}},{"id":1,"severity":1,"severityDesc":"DEBUG","datetime":"2025-05-15T05:56:59.588Z","message":"more stuff"}]}

@@ -5,15 +5,14 @@ interface initOptions {
     outputDir?: string,
     fileName: string,
     prefix?: string,
-    timestamps?: boolean,
     job: string
 }
 
 enum SEVERITY {
+    "CRITICAL",
+    "ERROR",
     "WARNING",
     "DEBUG",
-    "ERROR",
-    "CRITICAL",
     "INFO"
 }
 
@@ -21,6 +20,7 @@ interface Log {
     id: number,
     message: string,
     severity: SEVERITY;
+    severityDesc: string,
     data?: any;
     datetime: Date | null
 };
@@ -49,7 +49,6 @@ export default class JSONLogger {
      * @returns an instantiated JSONLogger object.
      */
     constructor(options: initOptions) {
-        console.log(options.timestamps)
         this.logs = []
         this.outputDir = options.outputDir ? options.outputDir : __dirname;
         this.fileName = options.fileName;
@@ -69,10 +68,10 @@ export default class JSONLogger {
     * @method log
    */
     log(message: string, severity: SEVERITY, data?: any) {
-        console.log('ts:', this.timestamps)
         const log: Log = {
             id: this.id++,
             severity,
+            severityDesc: SEVERITY[severity],
             datetime:  new Date() ,
             message,
             data
