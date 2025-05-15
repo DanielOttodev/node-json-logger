@@ -1,7 +1,7 @@
 
 # NodeJS JSON Logger
 
-A lightweight, 0 dependancy NodeJS JSON logger. Built using Typescript. 
+A lightweight, 0 build dependancy NodeJS JSON logger. Built using Typescript. 
 
 
 
@@ -13,19 +13,21 @@ A lightweight, 0 dependancy NodeJS JSON logger. Built using Typescript.
 
 Clone the project
 
+
 ```bash
-  git clone https://link-to-project
+  git https://gitlab.humebank.com.au/Digital/hume-library/nodejs-json-logger
 ```
 
+
+npm -i (only needed for dev types if wanting to adjust source) 
+
 Compile from typescript
-
-tsc node-logger-json.ts
-
+npm run build  
 
 
 ## Usage
 
-View the test.js file in /build to get a full working example.
+View the test.js file to get a example of usage.
 
 ```
 import JSONLogger from './node-logger-json';
