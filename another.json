@@ -1,0 +1,1 @@
+{"datetime":"2025-05-15T06:24:48.472Z","job":"Some script","totalItems":2,"logs":[{"id":0,"severity":0,"severityDesc":"CRITICAL","datetime":"2025-05-15T06:24:48.472Z","message":"stuff","data":{"1":"more stuff?"}},{"id":1,"severity":1,"severityDesc":"ERROR","datetime":"2025-05-15T06:24:48.472Z","message":"more stuff"}]}
